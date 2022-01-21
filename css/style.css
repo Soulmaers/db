@@ -10,7 +10,7 @@
     border: 2px solid grey;
     margin: 10% 10%;
 }
-.sale, .order{
+.sale, .order, .clear{
     padding:15px;
     display: flex;
 
