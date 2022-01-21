@@ -27,10 +27,27 @@
 
 
 
+    <button id="a">0</button>
+    <button id="clear">clear</button>
+    <button id="b">0</button>
+    <button id="clear2">clear</button>
+    <script>
+        let upd = (n) => localStorage.setItem('c', a.textContent = n || 0)
+        upd(localStorage.getItem('c'));
+        a.onclick = e => upd(+a.textContent + 1)
+        clear.onclick = e => upd(0)
 
+        let upd2 = (n) => localStorage.setItem('j', b.textContent = n || 0)
+        upd2(localStorage.getItem('j'));
+        b.onclick = e => upd2(+b.textContent + 1)
+        clear2.onclick = e => upd2(0)
 
+    </script>
 
 </body>
 <script src="click.js"></script>
+
+
+
 
 </html>

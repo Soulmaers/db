@@ -1,10 +1,12 @@
 window.onload = () => {
+
     count_order = localStorage.getItem("count_order") ? JSON.parse(localStorage.getItem("count_order")) : 0;
     view_order.textContent = count_order;
     count_sale = localStorage.getItem("count_sale") ? JSON.parse(localStorage.getItem("count_sale")) : 0;
     view_sale.textContent = count_sale;
 
 };
+
 
 
 let link_order = document.getElementById("link_order");
