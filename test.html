@@ -10,7 +10,7 @@
 
 <body>
 
-
+    <!--
     <p>
         Select a radio button and click on Submit.
     </p>
@@ -39,6 +39,50 @@
                     document.getElementById("result").innerHTML = "Gender: " + ele[i].value;
             }
         }
+
+    </script>-->
+
+
+    <p>
+        Select a radio button and click on Submit.
+    </p>
+
+
+    Gender:
+    <input type="radio" name="gender" id="one" value="Male">Male
+    <input type="radio" name="gender" id="two" value="Female">Female
+    <input type="radio" name="gender" id="three" value="Others">Others
+    <br>
+    <button type="button" id="btn">
+        Submit
+    </button>
+
+    <br>
+
+    <div id="result"></div>
+    <div id="result2"></div>
+
+    <script>
+
+        let count = 0;
+        let ele = document.getElementsByName('gender');
+        let result = document.getElementById("result");
+
+
+        btn.onclick = function displayRadioValue() {
+
+            for (i = 0; i < ele.length; i++) {
+                if (ele[i].checked)
+                    count++;
+                result.textContent = count;
+
+
+
+            }
+        }
+
+
+
 
     </script>
 </body>
