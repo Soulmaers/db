@@ -1,137 +1,46 @@
-<!--
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <title></title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 
 <body>
 
-    <div>
 
-        <h3 id="counter-label">0</h3>
+    <p>
+        Select a radio button and click on Submit.
+    </p>
 
 
-    </div>
+    Gender:
+    <input type="radio" name="gender" value="Male">Male
+    <input type="radio" name="gender" value="Female">Female
+    <input type="radio" name="gender" value="Others">Others
+    <br>
+    <button type="button" id="btn">
+        Submit
+    </button>
 
-    <div>
-        <button onclick="incrementClick()">Замер</button>
+    <br>
 
-        <button onclick="resetCounter()">Reset</button>
-    </div>
+    <div id="result"></div>
 
     <script>
-        let click = 0;
-        function incrementClick() {
-            updateDisplay(++click);
+
+
+        btn.onclick = function displayRadioValue() {
+            let ele = document.getElementsByName('gender');
+            for (i = 0; i < ele.length; i++) {
+                if (ele[i].checked)
+                    document.getElementById("result").innerHTML = "Gender: " + ele[i].value;
+            }
         }
-        function resetCounter() {
-            click = 0;
-            updateDisplay(click);
-        }
-        function updateDisplay(val) {
-            document.getElementById('counter-label').innerHTML = val;
-        }
+
     </script>
-
-</body>
-
-</html>-->
-<html>
-
-<head>
-    <title></title>
-</head>
-
-<body>
-
-    <!--<div>
-
-        <h3 id="counter-label">0</h3>
-
-
-    </div>
-
-
-
-    <div class="one">
-        <button class="btn-click-count" style="width:20%" id="demo1">Замер</button>
-    </div>
-    <div class="two">
-        <button class="btn-click-count" style="width:20%" id="demo2">Продажи </button>
-    </div>
-    <script>
-
-        /**
-   * btns: the buttons having the "btn-click-count" class (an array).
-   * btnsClicksCountArr: array to store the click counters for each button
-   **/
-        const btns = [...document.querySelectorAll('button.btn-click-count')],
-            btnsClicksCountArr = new Array(btns.length);
-
-
-        /** cycle through the buttons and apply a click handler for each one **/
-
-        /**
-        * el: the current button from the array of buttons (btns).
-        * i: its index in that array.
-        **/
-
-        btns.forEach((el, i) => {
-            /** initialize the btnsClicksCountArr at the index i with 0 **/
-            btnsClicksCountArr[i] = 0;
-
-            /** add click event handler for the current button in the array (btns) **/
-            el.addEventListener('click', () => el.textContent = ++btnsClicksCountArr[i]); /** increment the value stored in btnsClicksCountArr at the index i (the same index for that current button in the array btns) and write it in the button **/
-        });
-    </script>-->
-
-    <!--<div>
-
-        <h3 id="counter-label">0</h3>
-        <h3 id="counter-label2">0</h3>
-
-
-    </div>
-    <div class="one"><button id="demo1">Minced Hot 8oz </button></div>
-    <div class="two"><button id="demo2">Minced Hot 16oz </button></div>
-
-    <script>
-        const btn = document.querySelectorAll('button');
-        for (var i = 0; i < btn.length; i += 1) {
-            btn[i].onclick = function (e) {
-                let selector = document.getElementById(this.id);
-                let dataCount = selector.getAttribute('data-count');
-                if (dataCount == 0) {
-                    dataCount = 1;
-                    let productName = selector.innerHTML;
-                } else {
-                    dataCount = Number(dataCount) + 1;
-                }
-                selector.setAttribute('data-count', dataCount);
-
-                selector.innerHTML = dataCount;
-            };
-        }
-
-
-
-
-
-
-    </script>-->
-
-    <div class="order" id="view_order">0</div>
-    <a href="#" title="Click order" id="link_order">Замер</a>
-    <div class="sale" id="view_sale">0</div>
-    <a href="#" title="Click sale" id="link_sale">Продажи</a>
-
-    <script src="click.js">
-    
-
-
-
-
 </body>
 
 </html>
