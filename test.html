@@ -61,21 +61,29 @@
 
     <div id="result"></div>
     <div id="result2"></div>
+    <div id="result3"></div>
 
     <script>
 
         let count = 0;
-        let ele = document.getElementsByName('gender');
+        let count1=0;
+        let count2=0;
+        let ele = document.getElementsByName("gender");
         let result = document.getElementById("result");
 
 
         btn.onclick = function displayRadioValue() {
 
             for (i = 0; i < ele.length; i++) {
-                if (ele[i].checked)
+                if (ele[i].checked && ele[i]===one)
                     count++;
-                result.textContent = count;
-
+                    result.textContent = count;
+                    if (ele[i].checked && ele[i]===two)
+                    count1++;
+                    result2.textContent = count1;
+                    if (ele[i].checked && ele[i]===three)
+                    count2++;                  
+                result3.textContent = count2;
 
 
             }
@@ -85,6 +93,7 @@
 
 
     </script>
+
 </body>
 
 </html>
