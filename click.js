@@ -1,5 +1,4 @@
 
-
 // кнопки замер и продажи+радио кнопки, сохранение в локалстор и удаление
 let order = (n) => localStorage.setItem('c', view_order.textContent = n || 0)
 order(localStorage.getItem('c'));
@@ -16,6 +15,7 @@ link_sale.onclick = function (i) {
 link_clear.onclick = function (i) {
     sale(0);
     order(0);
+    /*
     fullM(0);
     fullS(0);
     aboxsbo(0);
@@ -31,18 +31,16 @@ link_clear.onclick = function (i) {
     addSalessbo(0);
     spbRegion(0);
     mskRegion(0);
-    /*summMontaj(0);
+    summMontaj(0);
     allsbo(0);
     allregion(0);*/
 };
 
-
+/* сумма счетчиков*/
 let summMontaj = (n) => localStorage.setItem('sum', all_view_montaj.textContent = n || 0)
 summMontaj(localStorage.getItem('sum'));
-
 let allsbo = (n) => localStorage.setItem('sbo', all_view_sbo.textContent = n || 0)
 allsbo(localStorage.getItem('sbo'));
-
 let allregion = (n) => localStorage.setItem('reg', all_view_reg.textContent = n || 0)
 allregion(localStorage.getItem('reg'));
 

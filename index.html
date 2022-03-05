@@ -12,98 +12,117 @@
 <body>
 
     <div class="container">
-        <div class="order">
-            <button class="btn" id="link_order">Замер</button>
-            <div class="view" id="view_order">0</div>
-        </div>
-        <div class="sale">
-            <button class="btn" id="link_sale">Продажи</button>
-            <div class="view" id="view_sale">0</div>
-        </div>
+        <div class="wrapper_left">
+            <header class="header">
+                <img class="logo" src="image/logo.jpg">
 
 
-        <div class="montaj">
-            <div class="montaj_all">
-                <h2 class="title_montaj">Монтажи</h2>
-                <div class="all_view" id="all_view_montaj">0</div>
+            </header>
+
+        </div>
+        <div class="wrapper_center">
+            <div class="title_bg">
+                <h1 class="title">Статистика продаж</h1>
             </div>
+            <div class="wrapper">
 
-            <form class="sbo" action="handler.php">
-                <ul class="list_sbo">
-                    <li class="sbo_text"><input name="dzen" type="radio" id="full" value="mnt"> Полный монтаж</li>
-                    <li class="sbo_text"><input name="dzen" type="radio" id="station" value="mnt"> Только станция</li>
-                </ul>
-                <ul class="list_view_sbo">
-                    <li class="sbo_view" id="full_view_montaj">0</li>
-                    <li class="sbo_view" id="station_view_montaj">0</li>
-                </ul>
-            </form>
-
+                <div class="order">
+                    <button class="btn" id="link_order">Замер</button>
+                    <div class="view" id="view_order">0</div>
+                </div>
+                <div class="sale">
+                    <button class="btn" id="link_sale">Продажи</button>
+                    <div class="view" id="view_sale">0</div>
+                </div>
 
 
-            <div class="montaj_all">
-                <h2 class="title_montaj">Станции</h2>
-                <div class="all_view" id="all_view_sbo">0</div>
+                <div class="montaj">
+                    <div class="montaj_all">
+                        <h2 class="title_montaj">Монтажи</h2>
+                        <div class="all_view" id="all_view_montaj">0</div>
+                    </div>
+
+                    <form class="sbo" action="handler.php">
+                        <ul class="list_sbo">
+                            <li class="sbo_text"><input name="dzen" type="radio" id="full" value="mnt"> Полный монтаж
+                            </li>
+                            <li class="sbo_text"><input name="dzen" type="radio" id="station" value="mnt"> Только
+                                станция
+                            </li>
+                        </ul>
+                        <ul class="list_view_sbo">
+                            <li class="sbo_view" id="full_view_montaj">0</li>
+                            <li class="sbo_view" id="station_view_montaj">0</li>
+                        </ul>
+                    </form>
+
+
+
+                    <div class="montaj_all">
+                        <h2 class="title_montaj">Станции</h2>
+                        <div class="all_view" id="all_view_sbo">0</div>
+                    </div>
+
+                    <form class="sbo" action="handler.php">
+                        <ul class="list_sbo">
+                            <li class="sbo_text"><input name="dzen" type="radio" id="abox"> Аэробокс</li>
+                            <li class="sbo_text"><input name="dzen" type="radio" id="biodeka"> Биодека</li>
+                            <li class="sbo_text"><input name="dzen" type="radio" id="optima"> Оптима</li>
+                            <li class=" sbo_text"><input name="dzen" type="radio" id="evrolos"> Евролос</li>
+                            <li class="sbo_text"><input name="dzen" type="radio" id="astra"> Астра</li>
+                            <li class="sbo_text"><input name="dzen" type="radio" id="topas"> Топас</li>
+                            <li class="sbo_text"><input name="dzen" type="radio" id="tver"> Тверь</li>
+                            <li class="sbo_text"><input name="dzen" type="radio" id="genezis"> Генезис</li>
+                            <li class="sbo_text"><input name="dzen" type="radio" id="evrobion"> Евробион</li>
+                            <li class="sbo_text"><input name="dzen" type="radio" id="other"> Другое</li>
+                            <li class="sbo_text"><input name="dzen" type="radio" id="addSales"> Доп.продажи</li>
+                        </ul>
+                        <ul class="list_view_sbo">
+                            <li class="sbo_view" id="aboxView">0</li>
+                            <li class="sbo_view" id="biodekaView">0</li>
+                            <li class="sbo_view" id="optimaView">0</li>
+                            <li class="sbo_view" id="evrolosView">0</li>
+                            <li class="sbo_view" id="astraView">0</li>
+                            <li class="sbo_view" id="topasView">0</li>
+                            <li class="sbo_view" id="tverView">0</li>
+                            <li class="sbo_view" id="genezisView">0</li>
+                            <li class="sbo_view" id="evrobionView">0</li>
+                            <li class="sbo_view" id="otherView">0</li>
+                            <li class="sbo_view" id="addSalesView">0</li>
+                        </ul>
+
+
+                    </form>
+
+                    <div class="montaj_all">
+                        <h2 class="title_montaj">Регион</h2>
+                        <div class="all_view" id="all_view_reg">0</div>
+                    </div>
+
+                    <form class="sbo" action="handler.php">
+                        <ul class="list_sbo">
+                            <li class="sbo_text"><input name="dzen" type="radio" id="regionSPB"> СПБ</li>
+                            <li class="sbo_text"><input name="dzen" type="radio" id="regionMSK"> МСК</li>
+
+                        </ul>
+                        <ul class="list_view_sbo">
+                            <li class="sbo_view" id="spbView">0</li>
+                            <li class="sbo_view" id="mskView">0</li>
+
+                        </ul>
+                    </form>
+
+
+                    <input class="btn_all" type="submit" id="btn" value="Монтаж">
+                </div>
+                <div class="clear">
+                    <button class="btn" id="link_clear">Очистить</button>
+
+                </div>
             </div>
-
-            <form class="sbo" action="handler.php">
-                <ul class="list_sbo">
-                    <li class="sbo_text"><input name="dzen" type="radio" id="abox"> Аэробокс</li>
-                    <li class="sbo_text"><input name="dzen" type="radio" id="biodeka"> Биодека</li>
-                    <li class="sbo_text"><input name="dzen" type="radio" id="optima"> Оптима</li>
-                    <li class=" sbo_text"><input name="dzen" type="radio" id="evrolos"> Евролос</li>
-                    <li class="sbo_text"><input name="dzen" type="radio" id="astra"> Астра</li>
-                    <li class="sbo_text"><input name="dzen" type="radio" id="topas"> Топас</li>
-                    <li class="sbo_text"><input name="dzen" type="radio" id="tver"> Тверь</li>
-                    <li class="sbo_text"><input name="dzen" type="radio" id="genezis"> Генезис</li>
-                    <li class="sbo_text"><input name="dzen" type="radio" id="evrobion"> Евробион</li>
-                    <li class="sbo_text"><input name="dzen" type="radio" id="other"> Другое</li>
-                    <li class="sbo_text"><input name="dzen" type="radio" id="addSales"> Доп.продажи</li>
-                </ul>
-                <ul class="list_view_sbo">
-                    <li class="sbo_view" id="aboxView">0</li>
-                    <li class="sbo_view" id="biodekaView">0</li>
-                    <li class="sbo_view" id="optimaView">0</li>
-                    <li class="sbo_view" id="evrolosView">0</li>
-                    <li class="sbo_view" id="astraView">0</li>
-                    <li class="sbo_view" id="topasView">0</li>
-                    <li class="sbo_view" id="tverView">0</li>
-                    <li class="sbo_view" id="genezisView">0</li>
-                    <li class="sbo_view" id="evrobionView">0</li>
-                    <li class="sbo_view" id="otherView">0</li>
-                    <li class="sbo_view" id="addSalesView">0</li>
-                </ul>
-
-
-            </form>
-
-            <div class="montaj_all">
-                <h2 class="title_montaj">Регион</h2>
-                <div class="all_view" id="all_view_reg">0</div>
-            </div>
-
-            <form class="sbo" action="handler.php">
-                <ul class="list_sbo">
-                    <li class="sbo_text"><input name="dzen" type="radio" id="regionSPB"> СПБ</li>
-                    <li class="sbo_text"><input name="dzen" type="radio" id="regionMSK"> МСК</li>
-
-                </ul>
-                <ul class="list_view_sbo">
-                    <li class="sbo_view" id="spbView">0</li>
-                    <li class="sbo_view" id="mskView">0</li>
-
-                </ul>
-            </form>
-
-
-            <input class="btn_all" type="submit" id="btn" value="Монтаж">
         </div>
-        <div class="clear">
-            <button class="btn" id="link_clear">Очистить</button>
 
-        </div>
     </div>
-
 </body>
 <script src="click.js"></script>
 
