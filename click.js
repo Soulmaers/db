@@ -1,44 +1,3 @@
-/*window.onload = () => {
-
-    count_order = localStorage.getItem("count_order")
-        ? JSON.parse(localStorage.getItem("count_order")) : 0;
-    view_order.textContent = count_order;
-    count_sale = localStorage.getItem("count_sale") 
-    ? JSON.parse(localStorage.getItem("count_sale")) : 0;
-    view_sale.textContent = count_sale;
-
-};
-
-
-
-let link_order = document.getElementById("link_order");
-let view_order = document.getElementById("view_order");
-let count_order = 0;
-
-link_order.onclick = function () {
-    count_order++;
-    view_order.textContent = count_order;
-    localStorage.setItem("count_order", JSON.stringify(count_order));
-};
-
-let link_sale = document.getElementById("link_sale");
-let view_sale = document.getElementById("view_sale");
-let count_sale = 0;
-
-link_sale.onclick = function () {
-    count_sale++;
-    view_sale.textContent = count_sale;
-    localStorage.setItem("count_sale", JSON.stringify(count_sale));
-};
-
-let link_clear = document.getElementById("link_clear");
-link_clear.onclick = function () {
-    count_clear = 0;
-    view_sale.textContent = count_clear;
-    view_order.textContent = count_clear;
-    localStorage.setItem("count_clear", JSON.stringify(count_clear));
-
-};*/
 
 
 // кнопки замер и продажи+радио кнопки, сохранение в локалстор и удаление
@@ -72,53 +31,114 @@ link_clear.onclick = function (i) {
     addSalessbo(0);
     spbRegion(0);
     mskRegion(0);
+    /*summMontaj(0);
+    allsbo(0);
+    allregion(0);*/
 };
+
+
+let summMontaj = (n) => localStorage.setItem('sum', all_view_montaj.textContent = n || 0)
+summMontaj(localStorage.getItem('sum'));
+
+let allsbo = (n) => localStorage.setItem('sbo', all_view_sbo.textContent = n || 0)
+allsbo(localStorage.getItem('sbo'));
+
+let allregion = (n) => localStorage.setItem('reg', all_view_reg.textContent = n || 0)
+allregion(localStorage.getItem('reg'));
+
+
 
 let fullM = (n) => localStorage.setItem('a', full_view_montaj.textContent = n || 0)
 fullM(localStorage.getItem('a'));
-let mtView = (e) => fullM(+full_view_montaj.textContent + 1);
+let mtView = (e) => {
+    fullM(+full_view_montaj.textContent + 1);
+    summMontaj(+all_view_montaj.textContent + 1);
+}
 let fullS = (n) => localStorage.setItem('b', station_view_montaj.textContent = n || 0)
 fullS(localStorage.getItem('b'));
-let stView = (e) => fullS(+station_view_montaj.textContent + 1);
+let stView = (e) => {
+    fullS(+station_view_montaj.textContent + 1);
+    summMontaj(+all_view_montaj.textContent + 1);
+}
+
 let aboxsbo = (n) => localStorage.setItem('d', aboxView.textContent = n || 0)
 aboxsbo(localStorage.getItem('d'));
-let arboxView = e => aboxsbo(+aboxView.textContent + 1);
+let arboxView = (e) => {
+    aboxsbo(+aboxView.textContent + 1);
+    allsbo(+all_view_sbo.textContent + 1);
+}
 let biodekasbo = (n) => localStorage.setItem('y', biodekaView.textContent = n || 0)
 biodekasbo(localStorage.getItem('y'));
-let bdView = e => biodekasbo(+biodekaView.textContent + 1);
+let bdView = e => {
+    biodekasbo(+biodekaView.textContent + 1);
+    allsbo(+all_view_sbo.textContent + 1);
+}
 let optimasbo = (n) => localStorage.setItem('r', optimaView.textContent = n || 0)
 optimasbo(localStorage.getItem('r'));
-let oView = e => optimasbo(+optimaView.textContent + 1);
+let oView = e => {
+    optimasbo(+optimaView.textContent + 1);
+    allsbo(+all_view_sbo.textContent + 1);
+}
 let evrolossbo = (n) => localStorage.setItem('w', evrolosView.textContent = n || 0)
 evrolossbo(localStorage.getItem('w'));
-let evView = e => evrolossbo(+evrolosView.textContent + 1);
+let evView = e => {
+    evrolossbo(+evrolosView.textContent + 1);
+    allsbo(+all_view_sbo.textContent + 1);
+}
 let astrasbo = (n) => localStorage.setItem('m', astraView.textContent = n || 0)
 astrasbo(localStorage.getItem('m'));
-let asView = e => astrasbo(+astraView.textContent + 1);
+let asView = e => {
+    astrasbo(+astraView.textContent + 1);
+    allsbo(+all_view_sbo.textContent + 1);
+}
 let topassbo = (n) => localStorage.setItem('l', topasView.textContent = n || 0)
 topassbo(localStorage.getItem('l'));
-let tView = e => topassbo(+topasView.textContent + 1);
+let tView = e => {
+    topassbo(+topasView.textContent + 1);
+    allsbo(+all_view_sbo.textContent + 1);
+}
 let tversbo = (n) => localStorage.setItem('u', tverView.textContent = n || 0)
 tversbo(localStorage.getItem('u'));
-let tvView = e => tversbo(+tverView.textContent + 1);
+let tvView = e => {
+    tversbo(+tverView.textContent + 1);
+    allsbo(+all_view_sbo.textContent + 1);
+}
 let genezissbo = (n) => localStorage.setItem('p', genezisView.textContent = n || 0)
 genezissbo(localStorage.getItem('p'));
-let genView = e => genezissbo(+genezisView.textContent + 1);
+let genView = e => {
+    genezissbo(+genezisView.textContent + 1);
+    allsbo(+all_view_sbo.textContent + 1);
+}
 let evrobionsbo = (n) => localStorage.setItem('z', evrobionView.textContent = n || 0)
 evrobionsbo(localStorage.getItem('z'));
-let bionView = e => evrobionsbo(+evrobionView.textContent + 1);
+let bionView = e => {
+    evrobionsbo(+evrobionView.textContent + 1);
+    allsbo(+all_view_sbo.textContent + 1);
+}
 let othersbo = (n) => localStorage.setItem('f', otherView.textContent = n || 0)
 othersbo(localStorage.getItem('f'));
-let othView = e => othersbo(+otherView.textContent + 1);
+let othView = e => {
+    othersbo(+otherView.textContent + 1);
+    allsbo(+all_view_sbo.textContent + 1);
+}
 let addSalessbo = (n) => localStorage.setItem('g', addSalesView.textContent = n || 0)
 addSalessbo(localStorage.getItem('g'));
-let addSView = e => addSalessbo(+addSalesView.textContent + 1);
+let addSView = e => {
+    addSalessbo(+addSalesView.textContent + 1);
+    allsbo(+all_view_sbo.textContent + 1);
+}
 let spbRegion = (n) => localStorage.setItem('spb', spbView.textContent = n || 0)
 spbRegion(localStorage.getItem('spb'));
-let spbV = e => spbRegion(+spbView.textContent + 1);
+let spbV = e => {
+    spbRegion(+spbView.textContent + 1);
+    allregion(+all_view_reg.textContent + 1);
+}
 let mskRegion = (n) => localStorage.setItem('msk', mskView.textContent = n || 0)
 mskRegion(localStorage.getItem('msk'));
-let mskV = e => mskRegion(+mskView.textContent + 1);
+let mskV = e => {
+    mskRegion(+mskView.textContent + 1);
+    allregion(+all_view_reg.textContent + 1);
+}
 
 //радион-кнопки, логика выбора
 let radio = document.getElementsByName("dzen");
