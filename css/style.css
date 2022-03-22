@@ -18,8 +18,9 @@
 
 .container{
     display: flex;
+    justify-content: center;
     max-width: 1400px;
-    margin: 0 auto;
+    margin: 50px auto;
 }
 .wrapper_left{
     background-color: #779035;
