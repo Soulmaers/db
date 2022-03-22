@@ -1,15 +1,41 @@
 
 // кнопки замер и продажи+радио кнопки, сохранение в локалстор и удаление
-let order = (n) => localStorage.setItem('c', view_order.textContent = n || 0)
+let order = (n) => {
+    localStorage.setItem('c', view_order.textContent = n || 0)
+}
 order(localStorage.getItem('c'));
 link_order.onclick = e => order(+view_order.textContent + 1)
+
+
+
+
+
+
+
 let sale = function (n) {
     localStorage.setItem('j', view_sale.textContent = n || 0)
+    if (n >= 6) {
+        document.getElementById("view_sale").style.backgroundColor = '#99C262';
+    } else {
+        document.getElementById("view_sale").style.backgroundColor = '#f2a5a5';
+    }
 };
 sale(localStorage.getItem('j'));
 link_sale.onclick = function (i) {
     sale(+view_sale.textContent + 1)
+
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 link_clear.onclick = function (i) {
