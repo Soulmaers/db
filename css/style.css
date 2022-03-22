@@ -9,6 +9,7 @@
     background-color: #779035;
     text-align: center;
         font-size: 2rem;
+        font-family: Open Sans;
         display: flex;
     align-items: center;
     justify-content: center;
@@ -28,6 +29,7 @@
 .wrapper_center{
     width: 50%;
     border: 2px solid grey;
+    background: lightgray;
    
 }
 .wrapper{
@@ -41,6 +43,7 @@
     display: flex;
     justify-content: space-between;
     
+    
 }
 .wrapper_static{
     display: flex;
@@ -52,8 +55,10 @@
 
 .montaj, .station{
     width: 45%;
-    border:1px solid green;
+    border:2px solid #779035;
     padding:2%;
+    background: #fff;
+    border-radius: 5px;
 }
 
 .title_bg{
@@ -65,6 +70,7 @@
     text-align: center;
     color:#fff;
     font-weight: 300;
+    font-family: Open Sans;
 }
 .sale, .order, .clear{
     
@@ -81,24 +87,41 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: lightgrey;
+    background: #fff;
     border-radius: 5px;
-    border:1px solid grey;
+    border:2px solid #779035;
+    font-weight: 900;
+    font-family: Open Sans;
 }
 .btn{
     width: 100px;
     padding:8px 15px;
+    background: #fff;
+    border:2px solid #779035;
+    border-radius: 5px;
+    cursor: pointer;
+    color:#779035;
+    font-weight: 900;
+    font-family: Open Sans;
+    
     
 }
 .btn_all{
-    
     margin:10px 30%;
     width: 100px;
     padding:8px 15px;
+    background: none;
+    border:2px solid #779035;
+    border-radius: 5px;
+    cursor: pointer;
+    color:#779035;
+    font-weight: 900;
+    font-family: Open Sans;
 }
 .montaj_text{
     font-size: 12px;
     margin-top:5px;
+    font-family: Open Sans;
 }
 .title_montaj{
     text-align: center;
@@ -106,13 +129,13 @@
     font-weight: 100;
     width: 30%;
     margin-left:20%;
+    font-family: Open Sans;
 }
 .btn_montaj{
     padding: 8px 15px;
+    
 }
-.list_sbo{
-    width: 63%;
-}
+
 
 
 .montaj_all{
@@ -123,15 +146,16 @@
 
 }
 .all_view{
-    
-    width: 40px;
+        width: 40px;
     height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: lightgrey;
+    background: none;
     border-radius: 5px;
-    border:1px solid grey;
+    border:2px solid #779035;
+    font-weight: 900;
+    font-family: Open Sans;
 }
 .sbo_view{
     margin-left:20px;
@@ -140,9 +164,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: lightgrey;
+    background: none;
     border-radius: 5px;
-    border:1px solid grey;
+    border:2px solid #779035;
+    font-weight: 500;
+    font-family: Open Sans;
 }
 .sbo{
     display: flex;
@@ -161,4 +187,5 @@ margin-top:20px;
     list-style-type: none;
     font-size: 15px;
     margin-top:5px;
+    font-family: Open Sans;
 }
