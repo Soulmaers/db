@@ -29,12 +29,43 @@
 .wrapper_left{
     background-color: #779035;
     min-height: 800px;
-    border: 2px solid gray;
+    border: 2px solid lightgray;
     border-radius: 10px;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    margin-top:50px;
+    border-radius: 10px;
+    border:3px solid lightgray;
+    padding:15px 5px;
+   
+}
+.menu_wrapper{
+    list-style-type: none;
+}
+.menu_list{
+   
+    padding:5px 10px;
+    border:2px solid #fff;
+    border-radius: 5px;
+    text-align: center;
+
+}
+.menu_list:nth-child(n+2){
+    margin-top:20px;
+}
+.menu_link{
+    text-decoration: none;
+    color:#fff;
+    font-size: 1rem;
+    font-family: Open Sans;
+   
 }
 .wrapper_center{
     width: 50%;
-    border: 2px solid gray;
+    border: 2px solid #779035;
     background: lightgray;
     border-radius: 10px;
    
@@ -70,12 +101,11 @@
 
 .title_bg{
     background-color:#779035;
-    min-height: 80px;
     border: 2px solid gray;
   
 }
 .title{
-   padding: 20px 0;
+   padding: 12px 0;
     text-align: center;
     color:#fff;
     font-weight: 300;
