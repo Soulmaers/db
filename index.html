@@ -30,6 +30,8 @@
                     <li class="menu_list"><a class="menu_link" href="">СБО</a></li>
                     <li class="menu_list"><a class="menu_link" href="">Регламент</a></li>
                     <li class="menu_list"><a class="menu_link" href="">ПО</a></li>
+                    <li class="menu_list"><a class="menu_link" href="">Продажи</a></li>
+                    <li class="menu_list"><a class="menu_link" href="">Контакты</a></li>
                 </ul>
 
 
@@ -118,7 +120,7 @@
                         <form class="sbo" action="handler.php">
                             <ul class="list_sbo">
                                 <li class="sbo_text"><input name="dzen" type="radio" id="abox"> Аэробокс</li>
-                                <li class="sbo_text"><input name="dzen" type="radio" id="biodeka"> Биодека</li>
+                                <li class="sbo_text"><input name="dzen" type="radio" id="biodeka"> Биодевайс</li>
                                 <li class="sbo_text"><input name="dzen" type="radio" id="optima"> Оптима</li>
                                 <li class=" sbo_text"><input name="dzen" type="radio" id="evrolos"> Евролос</li>
                                 <li class="sbo_text"><input name="dzen" type="radio" id="astra"> Астра</li>
@@ -149,6 +151,19 @@
                 </div>
 
             </div>
+            <main class="content">
+                <div class="card">
+                    <div class="tasks" id="tasks">
+                        <form class="tasks__control" id="tasks__form">
+                            <input type="text" class="tasks__input" id="task__input" placeholder="Ввести задачу">
+                            <button class="tasks__add" id="tasks__add">Добавить</button>
+                        </form>
+                        <div class="tasks__list" id="tasks__list">
+
+                        </div>
+                    </div>
+                </div>
+            </main>
         </div>
 
     </div>
